@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Pre Corso Epicode - Challenge2">
+    <title>Iscriviti - Spotify</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
-    <h1>SECONDA PROVA</h1>
+    <header>
+        <div id="testa">
+            <img src="/assets/img/Spotify_Logo_CMYK_Black.png" alt="Logo Spotify" />
+            <h1>Iscriviti gratuitamente per iniziare ad ascoltare.</h1>
+            <hr>
+        </div>
+    </header>
+    <main>
+
+        <form onsubmit="alert('Registrazione inviata')">
+            <fieldset>
+                <label>Inserisci il tuo nome <br>
+                    <input class="input" type="text" placeholder="Inserisci il tuo nome." />
+                </label> <br><br>
+                <label>Inserisci il tuo cognome <br>
+                    <input class="input" type="text" placeholder="Inserisci il tuo cognome." />
+                </label> <br><br>
+                <label>Qual'è il tuo indirizzo e-mail? <br>
+                    <input class="input" type="email" placeholder="Inserisci la tua e-mail." />
+                </label> <br><br>
+                <label>Crea una password <br>
+                    <input class="input" type="password" placeholder="Crea una password." />
+                </label> <br><br>
+                <label>Qual'è la data del tuo compleanno? <br>
+                    <input class="input" type="date" />
+                </label> <br><br>
+                <label>Inserisci il tuo numero di telefono <br>
+                    <input class="input" type="number" />
+                </label> <br><br>
+                <label>Selenziona i generi che preferisci! <br>
+                    <input type="checkbox" />Pop <br>
+                    <input type="checkbox" />Hip-Hop/Rap <br>
+                    <input type="checkbox" />Rock <br>
+                    <input type="checkbox" />Jazz <br>
+                    <input type="checkbox" />Indie
+                </label> <br><br>
+                <input type="radio" /> Accetto i <a href="https://www.spotify.com/it/legal/end-user-agreement/">termini
+                    e condizioni d'uso di Spotify.</a> <br>
+            </fieldset>
+
+            <button type="submit">INVIA REGISTRAZIONE</button>
+
+        </form>
+    </main>
+
 </body>
+
 </html>
