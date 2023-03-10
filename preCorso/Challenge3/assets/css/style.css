@@ -14,7 +14,7 @@ body {
 .image-container {
     height: 500px;
     background-image: url(/assets/img/oia.webp);
-    background-size: 100%;
+    background-size: cover;
 }
 
 h1 {
