@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.65;
+    color: #393d41;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+header {
+    background-color: black;
+    text-align: left;
+}
+
+header img {
+    width: 30%;
+    padding: 1em;
+}
+
+.start {
+ padding: 10em;
+ width: 55%;
+ margin: 0 auto;
+}
+
+#background {
+    height: 30em;
+    background-image: url(/images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#titolo {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    color: #25a2c3;
+    margin-top: 0;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f04c2f;
+    color: white;
+    padding: 0.9em 2.3em;
+    border: none;
+    border-radius: 0.2em;
+
+}
+
+.sottotitoli {
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    margin-bottom: 0;
+
+}
+
+#round {
+    border-radius: 50%;
+    max-width: 90%;
+
+}
+
+#section-round {
+    display: inline-block;
+    margin-bottom: 5em;
+    margin-right: 5em;
+}
+
+#info {
+    background-color: #e22d03;
+    padding: 2.5em;
+    margin-bottom: 3em;
+}
+
+.titoli-info {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+#info cite,
+figcaption {
+    color: white;
+}
+
+blockquote {
+    margin-top: 2em;
+    color: white;
+}
+
+.photo {
+    width: 25%;
+    margin: 2em auto;
+    border: 1px solid #dee1e3;
+    display: inline-block;
+    margin: 1em;
+}
+
+.photo p {
+    padding: 0 1em;
+}
+
+.photo img {
+    width: 100%;
+    height: 260px
+
+}
+
+#partiamo {
+    background-color: #25a2c3;
+    padding: 2em;
+    color: #c8e7f0;
+
+}
+
+#partiamo a {
+    color: #c8e7f0;
+}
+
+#partiamo i {
+    color: white;
+}
+
+hr {
+    width: 50%;
+}
+#paragrafi {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+}
+
+#introduction {
+    padding: 3em;
+}
+
+#card {
+    padding-bottom: 3em;
+}
