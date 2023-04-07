@@ -19,10 +19,11 @@ body {
     margin-top: 1em;
 }
 
-nav{
+nav {
     background-color: #364759;
 }
-nav ul{
+
+nav ul {
     list-style-type: none;
     line-height: 2em;
     color: white;
@@ -37,7 +38,7 @@ nav ul li {
 /* MAIN 
 */
 
-#content{
+#content {
     width: 95%;
     margin: 0 auto;
 }
@@ -50,30 +51,98 @@ nav ul li {
 }
 
 .green {
-text-align: center; 
-color: white;   
-background-image: url(/assets/img/bg-image.png);
-height: 12.3em;
+    text-align: center;
+    color: white;
+    background-image: url(/assets/img/bg-image.png);
+    height: 12.3em;
 
 }
 
 .green h1 {
-padding-top: 3em;
-font-size: 1.6em;
+    padding-top: 3em;
+    font-size: 1.6em;
 }
 
 .section-card {
     background-color: white;
 }
 
-.section-card p{
+.section-card p {
     font-size: large;
+    padding-top: 1em;
+    padding-left: 1em;
 
 }
 
-.section-card a { 
+
+.section-card img {
+    width: 305px;
+    height: 375px;
+    margin: 1em;
+    margin-left: 2.5em;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 10px 10px 5px #dedede;
+    overflow: hidden;
+
+}
+
+.section-one img {
+    margin-top: 2em;
+    width: 100%;
+
+}
+
+.section-two img {
+    margin-top: 2em;
+    width: 100%;
+}
+
+.ancor {
     text-decoration: none;
     color: #0a6c75;
     font-weight: bold;
     font-size: small;
+}
+
+figcaption {
+    text-align: center;
+}
+
+figcaption p {
+    font-size: large;
+    padding-top: 1em;
+    padding-left: 1em;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+/* FOOTER
+*/
+
+footer {
+    background-color: #222f3f;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+
+}
+
+footer p {
+    background-color: #364759;
+    line-height: 3em;
+
+}
+
+footer img {
+    width: 15em;
+    margin-left: 1.5em;
+    margin-top: 1em;
+    padding: 3em;
 }
