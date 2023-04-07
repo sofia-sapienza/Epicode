@@ -11,20 +11,35 @@ REGOLE
 */
 const pets = ['dog', 'cat', 'hamster', 'redfish']
 
+for (let i = 0; i < pets.length; i++) {
+  console.log(pets[i]);
+}
+
 /* ESERCIZIO 2
-    Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
+    Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets" e stampa l'array ordinato in console.
 */
+
+pets.sort()
+console.log(pets);
 
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
 
+pets.reverse();
+console.log(pets);
+
 /* ESERCIZIO 4
-    Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
+    Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione e stampa l'array in console.
 */
+var pesceRosso = pets.splice(0, 1);
+pets.push(pesceRosso[0]);
+
+console.log(pesceRosso);
+console.log(pets);
 
 /* ESERCIZIO 5
-    Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
+    Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta e stampa l'array in console.
 */
 const cars = [
   {
@@ -47,13 +62,37 @@ const cars = [
   },
 ]
 
+
+
+for (let i = 0; i < cars.length; i++) {
+  cars[i].licensePlate = 'CD289VX';
+}
+
+console.log(cars);
+
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
-    Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
+    Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto e stampa l'array in console.
 */
 
+cars.push({brand: 'Citroen',
+model: 'C2',
+color: 'grey',
+trims: ['life', 'style', 'r-line' ],
+licensePlate : 'CD289VX'});
+
+for(let i = 0; i < cars.length; i++){
+  cars[i].trims.pop()
+}
+
+console.log(cars);
+
+
+
+
+
 /* ESERCIZIO 7
-    Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
+    Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito e stampa in console l'array justTrims così popolato.
 */
 const justTrims = []
 
@@ -63,7 +102,7 @@ const justTrims = []
 */
 
 /* ESERCIZIO 9
-    Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
+    Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32 escluso.
 */
 const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
@@ -74,4 +113,4 @@ const numericArray = [
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
-const charactersArray = ["g", "n", "u", "z", "d"]
+const charactersArray = [g, n, u, z, d]
