@@ -77,12 +77,3 @@ font-size: 1.6em;
     font-weight: bold;
     font-size: small;
 }
-
-#foto1 {
-    background-image: url(/assets/img/img_1.jpg);
-    background-size: cover;
-}
-
-#foto2 {
-    background-image: url(/assets/img/img_2.jpg);
-}
