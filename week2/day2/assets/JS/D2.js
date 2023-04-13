@@ -11,7 +11,16 @@ REGOLE
  Elenca e descrivi i principali datatype in JavaScript. Prova a spiegarli come se volessi farli comprendere a un bambino.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*I data type in JavaScript sono i tipi di dato che possiamo fornire ad una variabile. 
+I principali sono: 
+STRING => si tratta di una seguenza di caratteri di tipo testuale 
+NUMBER => si tratta di un tipo di dato numerico, che può essere intero o decimale. Ad esempio 7 o 7.5
+BOOLEAN => è un tipo di dato che può possiamo fornire saltando con la parola true (vero) o false (falso)
+ 
+abbiamo anche dei data type definiti "primitivi", ovvero che non verrano scritti da noi, ma verranno direttamente generati in output quando:
+NULL => indica l'assenza intenzionale di un valore
+UNDEFINED => indica che una variabile non ha un valore assegnato oppure non è affatto definita
+*/
 
 /* ESERCIZIO 2
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
