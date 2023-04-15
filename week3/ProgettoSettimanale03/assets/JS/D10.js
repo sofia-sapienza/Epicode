@@ -547,7 +547,14 @@ colorRed();
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
 
+let list = document.createElement('li');
+list.textContent = 'quinto'
 
+function aggElemento() {
+  document.getElementById('myList').appendChild(list); 
+}
+
+aggElemento();
 
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
