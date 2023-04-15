@@ -31,6 +31,8 @@ console.log(elementi());
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici (suggerimento: il metodo filter può aiutare)
 */
 
+
+
 /* ESERCIZIO 4
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
