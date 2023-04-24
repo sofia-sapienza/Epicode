@@ -570,6 +570,7 @@ svuotaList();
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
 
+
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27
