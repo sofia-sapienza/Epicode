@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+/*
+1 creazione del testo e formattazione di 1 parola da far ruotare
+2 inserimento delle altre 2 parole
+3 sovrapporre le 3 parole
+4 mostrare 1 parola e nascondere le altre 2
+5 animare 1 parola (fadein - fadeout con spostamento)
+6 animare le altre 2 parole
+7 ritardare progressivamente l'animazione delle altre 2 parole 
+*/
+
+body{
+    color: #494949;
+    font-family: 'Bree Serif', serif;
+}
+
+#testoAlternato{
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+    border: 2px solid #818181;
+}
+
+.parole{
+    color: #95a8b5
+}
