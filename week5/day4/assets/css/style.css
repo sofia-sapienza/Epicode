@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: large;
+    font-family: 'Indie Flower', cursive;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #8e8e9b;
+    height: 100;
+}
+
+/* STILE POST-IT */
+.postIt{
+    width: 15%;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 8px 2px 10px 0px #545454;
+    padding: 1em;
+}
+
+.yellow{
+    background-image: linear-gradient(180deg, #ffffaf 0, #ffffa6 25%, #f2f29d 50%, #d7dd94 75%, #bfca8b 100%);
+    transform: rotate(-7deg);
+}
+
+.yellow:hover{
+
+    transform: rotate(0deg) scale(1.2);
+}
+
+.green{
+    background-image: linear-gradient(180deg, #dcffb8 0, #c7ffba 16.67%, #b1ffba 33.33%, #9df2b9 50%, #8be4b7 66.67%, #7cd7b5 83.33%, #70ccb4 100%);
+    transform: rotate(7deg);
+}
+
+.green:hover{
+    transform: rotate(0deg) scale(1.2);
+}
+
+.purple{
+    background-image: radial-gradient(circle at 50% -20.71%, #ffddfc 0, #fdd0f8 16.67%, #efc3f5 33.33%, #deb5f2 50%, #caa9f0 66.67%, #b49eef 83.33%, #9a96ee 100%);
+    transform: rotate(-10deg);
+}
+
+.purple:hover{
+    transform: rotate(0deg) scale(1.2);
+}
+
+.container h4{
+    margin-bottom: 0;
+}
+
+.container p{
+    margin-top: 0;
+}
