@@ -31,6 +31,7 @@ header nav ul {
 }
 header nav li {
     list-style: none;
+    display: inline-block;
 }
 header nav li a {
     color: white;
@@ -178,3 +179,38 @@ footer {
 footer a {
     color: fuchsia;
 }
+
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 768px) {
+body{
+    font-size: 2rem;
+}
+    h1{
+    font-size: 6rem;
+}
+table{
+    margin: 0 auto;
+    width: 70%;
+}
+section h2{
+    background-color:#969494;
+}
+aside h2{
+    font-size: 3rem;
+}
+footer{
+    font-size: 2rem;
+}
+}
+
+@media screen and (min-width: 992px){
+    header div, header div img, header div p, header nav, header nav li{
+        display: inline-block;
+        margin: 0;
+        vertical-align: middle;
+    }
+
+}
+
