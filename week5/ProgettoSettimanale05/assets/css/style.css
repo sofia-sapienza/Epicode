@@ -23,7 +23,7 @@ body {
 .containerHeader {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 80%;
     padding: 0.5em;
 }
 
@@ -53,7 +53,7 @@ nav ul button {
 .contentHero {
     display: flex;
     justify-content: space-between;
-    width: 85%;
+    width: 90%;
 }
 
 .contentHero h1 {
@@ -82,7 +82,7 @@ nav ul button {
 /* section articoli */
 
 .prova{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -153,9 +153,36 @@ nav ul button {
 .finale{
     display: flex;
     flex-direction: column;
+    width: 60%;
 }
 
 .contenitoreArticolo{
-    width: 500px;
     display: flex;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.titoloParagrafo{
+    margin-bottom: 0.5em;
+}
+
+.paragrafoGrey{
+    color: lightslategray;
+    margin: 0;
+}
+
+.dataArticle{
+    display: flex;
+    align-items: center;
+}
+
+.fakeButton{
+    background-color: rgb(242, 236, 236);
+    border-radius: 1em;
+    margin-left: 0.5em;
+    padding: 0.3em;
+}
+
+.bookmark{
+margin-left: 25em;
 }
