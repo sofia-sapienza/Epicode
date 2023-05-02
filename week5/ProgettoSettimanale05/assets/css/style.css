@@ -43,6 +43,10 @@ nav ul button {
 
 /* SECTION HERO */
 
+.bottoneStart{
+    cursor: pointer;
+}
+
 .heroSection {
     display: flex;
     justify-content: flex-end;
