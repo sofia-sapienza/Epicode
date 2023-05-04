@@ -185,6 +185,11 @@ nav ul button {
 .dataArticle{
     display: flex;
     align-items: center;
+    color: grey;
+}
+
+.dataArticle img{
+    padding-left: 0.3em;
 }
 
 .fakeButton{
