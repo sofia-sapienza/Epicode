@@ -6,6 +6,9 @@
   padding: 0.3em;
 }
 
-section {
+.heroSection {
   background-color: #7550fe;
+}
+.heroSection h1 {
+  color: white;
 }/*# sourceMappingURL=principal.css.map */
