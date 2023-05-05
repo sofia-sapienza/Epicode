@@ -1,3 +1,4 @@
+/* NAVBAR */
 .hamburger {
   margin-left: 0.5em;
 }
@@ -6,9 +7,14 @@
   padding: 0.3em;
 }
 
+/* HERO SECTION */
 .heroSection {
   background-color: #7550fe;
 }
 .heroSection h1 {
   color: white;
+}
+
+.buttonHero {
+  padding: 0.6em 1em 0.6em 1em;
 }/*# sourceMappingURL=principal.css.map */

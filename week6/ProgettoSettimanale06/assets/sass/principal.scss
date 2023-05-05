@@ -1,4 +1,5 @@
-$principalColor: #7550fe;
+@import './partials/variables';
+/* NAVBAR */
 
 .hamburger{
     margin-left: 0.5em;
@@ -8,10 +9,16 @@ $principalColor: #7550fe;
     padding: 0.3em;
 }
 
+/* HERO SECTION */
+
 .heroSection{
     background-color: $principalColor;
     
     h1{
         color: white;
     }
+}
+
+.buttonHero{
+    padding: 0.6em 1em 0.6em 1em;
 }
