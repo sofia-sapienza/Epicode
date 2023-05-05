@@ -7,6 +7,10 @@
   padding: 0.3em;
 }
 
+.badgeNav {
+  background-color: #7550fe;
+}
+
 /* HERO SECTION */
 .heroSection {
   background-color: #7550fe;
@@ -16,5 +20,5 @@
 }
 
 .buttonHero {
-  padding: 0.6em 1em 0.6em 1em;
+  padding: 0.7em 1.2em 0.7em 1.2em;
 }/*# sourceMappingURL=principal.css.map */
