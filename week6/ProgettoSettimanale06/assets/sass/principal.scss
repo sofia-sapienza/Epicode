@@ -24,5 +24,21 @@
 }
 
 .buttonHero{
+    border: none;
     padding: 0.7em 1.2em 0.7em 1.2em;
 }
+
+/* SUB SECTION HERO */
+.elementSection{
+    line-height: 0.5em;
+}
+
+.boxIcon{
+    padding: 1em;
+    background-color: #ffeeda;
+    i{
+        color: #c28135;
+        padding: 0.3em;
+    }
+}
+
