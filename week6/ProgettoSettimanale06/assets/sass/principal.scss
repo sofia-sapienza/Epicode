@@ -17,10 +17,6 @@
 
 .heroSection{
     background-color: $principalColor;
-    
-    h1{
-        color: white;
-    }
 }
 
 .buttonHero{
@@ -35,10 +31,16 @@
 
 .boxIcon{
     padding: 1em;
-    background-color: #ffeeda;
+    background-color: $backgroundIcon;
     i{
-        color: #c28135;
+        color: $colorIcon;
         padding: 0.3em;
     }
+}
+
+/* CARD */
+
+.iconaRete{
+    color: $principalColor;
 }
 

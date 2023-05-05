@@ -15,9 +15,6 @@
 .heroSection {
   background-color: #7550fe;
 }
-.heroSection h1 {
-  color: white;
-}
 
 .buttonHero {
   border: none;
@@ -36,4 +33,9 @@
 .boxIcon i {
   color: #c28135;
   padding: 0.3em;
+}
+
+/* CARD */
+.iconaRete {
+  color: #7550fe;
 }/*# sourceMappingURL=principal.css.map */
