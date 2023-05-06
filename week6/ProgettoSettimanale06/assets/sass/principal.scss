@@ -39,6 +39,9 @@
 }
 
 /* CARD */
+.coloreSfondo{
+    background-color: #f5f4f8;
+}
 
 .iconaRete{
     color: $principalColor;
@@ -48,5 +51,19 @@
     img{
         width: 40px;
         border-radius: 50%;
+    }
+}
+
+.containerChevron{
+border-radius: 50%;
+background-color: #e3dddd;
+padding: 0.8em;
+z-index: 1;
+border: 2px solid white;
+margin-top: 2em;
+
+    i{
+        padding: 0.3em;
+        color: white;
     }
 }
