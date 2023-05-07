@@ -61,4 +61,12 @@
 .containerChevron i {
   padding: 0.3em;
   color: white;
+}
+
+/* FOOTER */
+.containerList ul li {
+  list-style-type: none;
+}
+.containerList ul li a {
+  text-decoration: none;
 }/*# sourceMappingURL=principal.css.map */
