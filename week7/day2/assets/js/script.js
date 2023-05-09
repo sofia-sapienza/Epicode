@@ -65,7 +65,7 @@ clearButton.addEventListener('click', function (e) {
 
 
 window.onload = function () {
-    if(localStorage.getItem('namesListArray')){
+    if (localStorage.getItem('namesListArray')) {
         let arrayAsAStringFromLocalStorage = localStorage.getItem('namesListArray')
         let newnamesListArray = JSON.parse(arrayAsAStringFromLocalStorage)
         namesList = newnamesListArray
@@ -74,5 +74,19 @@ window.onload = function () {
     }
 }
 
+//----CONTATORE----
 
+let stampaTimer = document.querySelector("span");
+let tempo = 0;
 
+if(sessionStorage.getItem('timer')){
+  tempo = Number(sessionStorage.getItem('timer'))
+}
+
+let miaFunzione = function () {
+  tempo++;
+  stampaTimer.innerHTML = tempo;
+  sessionStorage.setItem("timer", tempo);
+};
+
+setInterval(miaFunzione, 1000);
