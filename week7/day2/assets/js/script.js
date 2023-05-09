@@ -19,14 +19,14 @@ const creaLista = function () {
     console.log('sono in creaLista')
     let list = document.querySelector('ul');
     // svuoto la lista per non rimanere con residui
-    list.innerHTML = ''
+    list.innerHTML = '';
 
     //cicliamo nameList
     namesList.forEach((datoUtente) => {
         //per ogni nome creo un <li> e lo appendo alla lista
-        const newLi = document.createElement('li')
-        newLi.innerText = datoUtente.name + ' ' + datoUtente.surname
-        list.appendChild(newLi)
+        const newLi = document.createElement('li');
+        newLi.innerText = datoUtente.name + ' ' + datoUtente.surname;
+        list.appendChild(newLi);
     })
 
 }
@@ -53,12 +53,15 @@ saveButton.addEventListener('click', function (e) {
     surnameField.value = ''
 
     creaLista()
-})
+});
 
-clearButton.addEventListener =('click'), function(e) {
+clearButton.addEventListener('click', function (e) {
     e.preventDefault();
     localStorage.removeItem('namesListArray');
-}
+    const list = document.querySelector('ul');
+    list.innerHTML = '';
+
+});
 
 
 window.onload = function () {
