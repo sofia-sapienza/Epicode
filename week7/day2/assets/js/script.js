@@ -55,9 +55,11 @@ saveButton.addEventListener('click', function (e) {
     creaLista()
 })
 
-clearButton.addEventListener = function() {
+clearButton.addEventListener =('click'), function(e) {
+    e.preventDefault();
     localStorage.removeItem('namesListArray');
 }
+
 
 window.onload = function () {
     if(localStorage.getItem('namesListArray')){
