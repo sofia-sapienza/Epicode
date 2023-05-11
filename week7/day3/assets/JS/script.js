@@ -17,23 +17,30 @@ fetch('https://striveschool-api.herokuapp.com/books')
 
         console.log(dati)//l'array compare!
 
-        let containerCard = document.getElementById('containerCard')
-        dati.forEach((book) => {
-            let newCard = document.createElement(`<div class="col-sm-4 col-xl-3">
-    <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-    </div>`)
-            containerCard.newCard.appendChild(newCard)
-        })
+        let containerCard = document.getElementById('containerCard');
+        let card = '';
+        for (let i = 0; i < dati.length; i++) {
+            card += ` <div class="col-md-4 col-lg-3 mb-4"> <div class="card h-100">
+            <img src="${dati[i].img}" class="card-img-top  h-50" alt="${dati[i].title}">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="card-title">${dati[i].title}</h5>
+                <p class="card-text">$${dati[i].price}</p>
+              </div>
+              <div>
+                <button class="btn btn-danger w-100 mb-2 remove-btn">Scarta</button>
+                <button class="btn btn-primary w-100 add-btn">Compra ora</button>
+              </div>
+            </div>
+          </div>
+          </div>`
+        }
+
+        containerCard.innerHTML = card;
+
     })
+
     .catch((errore) => {
         console.log('Qualcosa è andato storto!', errore)
     })
+
