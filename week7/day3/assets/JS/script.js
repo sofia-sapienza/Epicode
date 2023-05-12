@@ -28,8 +28,8 @@ fetch('https://striveschool-api.herokuapp.com/books')
                 <p class="card-text">$${dati[i].price}</p>
               </div>
               <div>
-                <button class="btn btn-danger w-100 mb-2 remove-btn" onclick ="ciao(event)">Scarta</button>
-                <button class="btn btn-primary w-100 add-btn">Compra ora</button>
+                <button class="btn btn-danger w-100 mb-2 remove-btn" onclick ="scarta(event)">Scarta</button>
+                <button class="btn btn-primary w-100 add-btno nclick ="compra(event)">Compra ora</button>
               </div>
             </div>
           </div>
@@ -44,7 +44,8 @@ fetch('https://striveschool-api.herokuapp.com/books')
     console.log('Qualcosa è andato storto!', errore)
   })
 
-  function ciao (event) {
+  function scarta (event) {
     event.target.closest('.col-md-4').remove()
 
   }
+
