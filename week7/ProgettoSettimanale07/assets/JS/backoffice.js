@@ -37,5 +37,14 @@ formCreate.addEventListener('submit', function(e) {
     })
     .then((response) => {
         console.log(response)
+        if(response.ok) {
+            alert('EVENTO CREATO CON SUCCESSO!')
+        } else {
+            alert('ERRORE NEL SALVATAGGIO')
+            throw new Error('ERRORE NEL SALVATAGGIO')
+        }
+    })
+    .catch((errore) =>{
+        console.log(errore)
     })
 })
