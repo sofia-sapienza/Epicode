@@ -3,7 +3,7 @@ window.onload = () => {
   fetch("https://striveschool-api.herokuapp.com/api/product/", {
     headers: {
       "Authorization":
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVlNDZiOTg4Zjc0MDAwMTQyODc4ZDUiLCJpYXQiOjE2ODM5MDAwODksImV4cCI6MTY4NTEwOTY4OX0.pFyhpVCwiKv50NXVd0ez7igAsRm4leGPyQp-Esf0VdY",
+        "ATTACCATI A STO CAZZO",
     },
   })
     .then((response) => {
