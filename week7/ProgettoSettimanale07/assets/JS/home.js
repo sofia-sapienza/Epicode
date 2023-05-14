@@ -2,9 +2,8 @@
 window.onload = () => {
   fetch("https://striveschool-api.herokuapp.com/api/product/", {
     headers: {
-      "Authorization":
-        "Bearer placeholder",
-    },
+      "Authorization": "Bearer placeholder"
+    }
   })
     .then((response) => {
       //il parametro di questo then() è la response che ho ricevuto dalla fetch
@@ -25,7 +24,7 @@ window.onload = () => {
       dati.forEach((event) => {
         let colCards = `<div class="col-sm-6 col-xl-3 mt-3">
         <div class="card">
-          <img src="${event.imageUrl}" class="card-img-top" alt="..." />
+          <img src="${event.imageUrl}" class="card-img-top object-fit-cover"/>
           <div class="card-body">
             <h5 class="card-title">${event.name}</h5>
             <p class="card-text">
@@ -37,6 +36,8 @@ window.onload = () => {
           </div>
         </div>
       </div>`;
+
+      //alla riga 35 passo al link del bottone un parametro (_id)
 
       containerCards.innerHTML += colCards
       });
