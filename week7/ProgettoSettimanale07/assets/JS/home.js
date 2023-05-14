@@ -3,7 +3,7 @@ window.onload = () => {
   fetch("https://striveschool-api.herokuapp.com/api/product/", {
     headers: {
       "Authorization":
-        "ATTACCATI A STO CAZZO",
+        "Bearer placeholder",
     },
   })
     .then((response) => {

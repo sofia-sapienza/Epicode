@@ -31,7 +31,7 @@ formCreate.addEventListener('submit', function(e) {
         headers: {
             "Content-type": "application/json",
             "Authorization":
-            "ATTACCATI A STO CAZZO",
+            "Bearer placeholder"
         }
 
     })
