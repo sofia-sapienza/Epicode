@@ -31,7 +31,7 @@ window.onload = () => {
               ${event.description}
             </p>
             <p>${event.brand} - ${event.price}€</p>
-            <a href="./dettagli.html" class="btn btn-primary">Scopri di più</a>
+            <a href="./dettagli.html?eventId=${event._id}" class="btn btn-primary">Scopri di più</a>
             <a href="./backoffice.html?eventId=${event._id}" class="btn btn-danger">Modifica</a>
           </div>
         </div>
