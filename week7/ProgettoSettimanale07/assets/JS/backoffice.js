@@ -25,15 +25,20 @@ formCreate.addEventListener("submit", function (e) {
   console.log("oggetto da inviare alle API", newFilm);
 
   //adesso con il metodo POST faccio la request alla mia fetch()
-  fetch( eventId ? "https://striveschool-api.herokuapp.com/api/product/" + eventId : "https://striveschool-api.herokuapp.com/api/product/", {
-    method: eventId ? "PUT" : "POST",
-    body: JSON.stringify(newFilm),
-    headers: {
-      "Content-type": "application/json",
-      Authorization:
-        "Bearer placeholder",
-    },
-  })
+  fetch(
+    eventId
+      ? "https://striveschool-api.herokuapp.com/api/product/" + eventId
+      : "https://striveschool-api.herokuapp.com/api/product/",
+    {
+      method: eventId ? "PUT" : "POST",
+      body: JSON.stringify(newFilm),
+      headers: {
+        "Content-type": "application/json",
+        Authorization:
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDYxMDE0NWYzYjY1YzAwMTQ1OTMxZDkiLCJpYXQiOjE2ODQwNzg5MTcsImV4cCI6MTY4NTI4ODUxN30.x29Hz2A6EaJlfIsXF4b5zj3TzDiSo7eJiEB5TLVKD-Q",
+      },
+    }
+  )
     .then((response) => {
       console.log(response);
       if (response.ok) {
@@ -63,14 +68,14 @@ if (eventId) {
   document.getElementById("btnCreaProdotto").innerText = "Modifica prodotto";
 
   //bottone reset con fetch METODO DELETE
-  let btnReset = document.getElementById("btnReset");
-  btnReset.classList.remove("d-none");
-  btnReset.addEventListener("click", () => {
+  let btnElimina = document.getElementById("btnElimina");
+  btnElimina.classList.remove("d-none");
+  btnElimina.addEventListener("click", () => {
     fetch("https://striveschool-api.herokuapp.com/api/product/" + eventId, {
       method: "DELETE",
       headers: {
         Authorization:
-          "Bearer placeholder",
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDYxMDE0NWYzYjY1YzAwMTQ1OTMxZDkiLCJpYXQiOjE2ODQwNzg5MTcsImV4cCI6MTY4NTI4ODUxN30.x29Hz2A6EaJlfIsXF4b5zj3TzDiSo7eJiEB5TLVKD-Q",
       },
     })
       .then((response) => {
@@ -90,14 +95,14 @@ if (eventId) {
     headers: {
       "Content-type": "application/json",
       Authorization:
-        "Bearer placeholder",
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDYxMDE0NWYzYjY1YzAwMTQ1OTMxZDkiLCJpYXQiOjE2ODQwNzg5MTcsImV4cCI6MTY4NTI4ODUxN30.x29Hz2A6EaJlfIsXF4b5zj3TzDiSo7eJiEB5TLVKD-Q",
     },
   })
     .then((response) => {
       if (response.ok) {
         return response.json();
       } else {
-        throw new Error("Errore nel recupeto del prodotto");
+        throw new Error("Errore nel recupero del prodotto");
       }
     })
     .then((prodotto) => {
@@ -119,5 +124,3 @@ if (eventId) {
     });
 } else {
 }
-
-

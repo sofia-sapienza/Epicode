@@ -2,7 +2,7 @@
 window.onload = () => {
   fetch("https://striveschool-api.herokuapp.com/api/product/", {
     headers: {
-      "Authorization": "Bearer placeholder"
+      "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDYxMDE0NWYzYjY1YzAwMTQ1OTMxZDkiLCJpYXQiOjE2ODQwNzg5MTcsImV4cCI6MTY4NTI4ODUxN30.x29Hz2A6EaJlfIsXF4b5zj3TzDiSo7eJiEB5TLVKD-Q"
     }
   })
     .then((response) => {
@@ -24,14 +24,14 @@ window.onload = () => {
       dati.forEach((event) => {
         let colCards = `<div class="col-sm-6 col-xl-3 mt-3">
         <div class="card">
-          <img src="${event.imageUrl}" class="card-img-top object-fit-cover"/>
+          <img src="${event.imageUrl}" class="card-img-top object-fit-contain" style="height:20rem"/>
           <div class="card-body">
-            <h5 class="card-title">${event.name}</h5>
+            <h5 class="card-title"><b>${event.name}</b></h5>
             <p class="card-text">
               ${event.description}
             </p>
             <p>${event.brand} - ${event.price}€</p>
-            <a href="#" class="btn btn-primary">Scopri di più</a>
+            <a href="./dettagli.html" class="btn btn-primary">Scopri di più</a>
             <a href="./backoffice.html?eventId=${event._id}" class="btn btn-danger">Modifica</a>
           </div>
         </div>
