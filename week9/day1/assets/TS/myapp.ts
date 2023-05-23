@@ -22,9 +22,9 @@ function verifica() :void {
     }
 }
 
-console.log('Numero giocatore 1 -', Giocatore1)
+console.log('Numero giocatore 1 =>', Giocatore1)
 console.log('---------------------------------')
-console.log('Numero giocatore 2 -', Giocatore2)
+console.log('Numero giocatore 2 =>', Giocatore2)
 console.log('---------------------------------')
 console.log('Numero estratto -', NumeroEstratto)
 verifica()
