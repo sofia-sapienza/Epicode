@@ -61,7 +61,7 @@ utente1.chiamata(2);
 console.log('Credito residuo:', utente1.numero404());
 //verifico con un console.log() quante chiamate sono state fatte
 console.log('Numero chiamate:', utente1.getNumeroChiamate());
-//verifico con un console.log() le chiame azzerate, ovviamente TESTA DI CAZZO prima chiami il metodo no?!
+//verifico con un console.log() le chiame azzerate
 utente1.azzeraChiamate()
 console.log('Chiamate azzerate:', utente1.numeroChiamate)
 
