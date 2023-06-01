@@ -1,1 +1,14 @@
-<h1>post-inattivi works!</h1>
+<div class="container mt-5">
+  <div *ngFor="let item of listaPost"> <!--ngFor* è una direttiva strutturale, iteriamo l'array  listaPost-->
+
+    <div *ngIf="!item.active" class="card mt-5"><!--*ngIf è una direttiva strutturale, decidiamo se renderizzare o meno un elemento in base ad un condizione booleana-->
+      <h5 class="card-header">POST</h5>
+      <div class="card-body">
+        <h5 class="card-title">{{item.title}}</h5>
+        <p class="card-text">{{item.body}}</p>
+      </div>
+
+    </div>
+
+  </div>
+</div>

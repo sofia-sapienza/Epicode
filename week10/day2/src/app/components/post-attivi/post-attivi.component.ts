@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 //Il nostro component per poter gestire quello che la fetch ci ha ritornato ha bisogno che venga
-//importata sia l'interfaccia, sia il nostro service
+//importata sia l'interfaccia, sia il nostro service ↙️
 import { Posts } from 'src/app/models/posts';
 import { PostsService } from 'src/app/service/posts.service';
 
@@ -12,7 +12,15 @@ import { PostsService } from 'src/app/service/posts.service';
 })
 export class PostAttiviComponent implements OnInit {
 
-  constructor() { }
+  //adesso creo una variabile di tipo `:` Posts che sarà un array[], perché il json è un'array!
+  listaPost: Posts[] = []
+
+  constructor(private postSrv: PostsService) {
+    this.postSrv.getPosts().then((dati) => {
+      this.listaPost = dati;
+      console.log(this.listaPost)
+    })
+   }
 
   ngOnInit(): void {
   }
