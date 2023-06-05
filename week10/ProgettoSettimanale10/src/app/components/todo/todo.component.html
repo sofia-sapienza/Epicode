@@ -1,1 +1,15 @@
-<p>todo works!</p>
+<div class="container">
+  <!--Qui verranno renderizzate le task aggiunte-->
+  <div>
+    <ul>
+
+    </ul>
+  </div>
+
+  <!--Qui inizia il campo di input-->
+  <div class="input-group mb-3 mt-5">
+    <input type="text" [(ngModel)]="inputValue" class="form-control" placeholder="Scrivi la tua task" aria-label="Scrivi la tua task"
+      aria-describedby="button-addon2">
+    <button class="btn btn-success" type="button" id="button-addon2"><i class="bi bi-plus"></i></button>
+  </div>
+</div>

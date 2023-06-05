@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+//importo l'interfaccia
+import { InterfacciaTodo } from 'src/app/models/interfaccia-todo';
+import { TodoService } from 'src/app/service/todo.service';
+
 
 @Component({
   selector: 'app-todo',
@@ -7,7 +12,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoComponent implements OnInit {
 
-  constructor() { }
+  inputValue: string = '';
+
+  constructor(private mioService: TodoService) {
+
+   }
 
   ngOnInit(): void {
   }

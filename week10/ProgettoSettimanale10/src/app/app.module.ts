@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+//importo il modulo FormsModule
+import { FormsModule } from '@angular/forms';
 // Per gestire il routing importo {Route, RouterModule} from '@angular/router';
 // dove RouterModule è un modulo fornito da Angular che offre funzionalità per il routing e
 // Route è un'interfaccia, quindi un oggetto che definisce una singola route all'interno dell'applicazione, specificando il percorso corrispondente e il componente associato
@@ -33,6 +35,7 @@ const routes: Route[] = [
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot(routes) // qui importo il RouterModule del decoratore
   ],
   providers: [],
