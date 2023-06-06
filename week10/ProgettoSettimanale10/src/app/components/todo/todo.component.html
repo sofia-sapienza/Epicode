@@ -1,50 +1,28 @@
 <div class="container">
   <!--Qui inizia il campo di input-->
   <div class="input-group mb-3 mt-5">
-    <input
-      type="text"
-      [(ngModel)]="inputValue"
-      class="form-control"
-      placeholder="Scrivi la tua task"
-      aria-label="Scrivi la tua task"
-      aria-describedby="button-addon2"
-    />
-    <button
-      (click)="aggiungiTask()"
-      class="btn btn-success"
-      type="button"
-      id="button-addon2"
-    >
+    <input type="text" [(ngModel)]="inputValue" class="form-control" placeholder="Scrivi la tua task"
+      aria-label="Scrivi la tua task" aria-describedby="button-addon2" />
+    <button (click)="aggiungiTask()" class="btn btn-success" type="button" id="button-addon2">
       <i class="bi bi-plus"></i>
     </button>
   </div>
 
   <!--Qui verranno renderizzate le task aggiunte-->
   <div class="mt-2">
+    <p *ngIf="scrittaCompleta">Completa task...</p>
+    <p *ngIf="scrittaElimina">Elimino task...</p>
     <ul *ngFor="let item of mioArrayTodo">
       <li *ngIf="!item.completed">
         <p>
           {{ item.title }}
-          <button
-            (click)="modificaTodo(item)"
-            class="btn btn-success"
-            type="button"
-            id="button-addon2"
-          >
+          <button (click)="modificaTodo(item)" class="btn btn-success" type="button" id="button-addon2">
             <i class="bi bi-check-lg"></i>
           </button>
-          <button
-            (click)="eliminaTodo(item)"
-            class="btn btn-danger ms-1"
-            type="button"
-            id="button-addon2"
-          >
+          <button (click)="eliminaTodo(item)" class="btn btn-danger ms-1" type="button" id="button-addon2">
             <i class="bi bi-trash3-fill"></i>
           </button>
         </p>
-
-        <p *ngIf="scrittaElimina">Elimino task...</p>
-        <p *ngIf="scrittaCompleta">Completa task...</p>
 
       </li>
     </ul>
