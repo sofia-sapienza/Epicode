@@ -10,6 +10,7 @@ import { MoviesComponent } from './components/movies/movies.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { Error404Component } from './components/error404/error404.component';
 
 const routes: Route[] = [
  {
@@ -23,6 +24,10 @@ const routes: Route[] = [
  {
   path: 'profile',
   component: ProfileComponent
+ },
+ {
+  path: '**',
+  component: Error404Component
  }
 ];
 @NgModule({
@@ -33,7 +38,8 @@ const routes: Route[] = [
     MoviesComponent,
     ProfileComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,
