@@ -7,13 +7,13 @@
     <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+          <a class="nav-link active text-light" aria-current="page" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  text-light" href="#">Film</a>
+          <a class="nav-link  text-light" [routerLink]="['/movies']">Film</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  text-light" href="#">Profile</a>
+          <a class="nav-link  text-light" [routerLink]="['/profile']">Profile</a>
         </li>
       </ul>
       <button type="button" class="btn text-light btn-logout">Logout</button>
