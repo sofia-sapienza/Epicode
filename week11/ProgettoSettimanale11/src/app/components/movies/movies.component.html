@@ -1,13 +1,16 @@
-<div class="container">
-<div class="row">
-  <div class="col-3">
-    <!-- card -->
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-3 mt-3" *ngFor="let movie of movies">
+        <!-- card -->
+        <div class="card h-100">
+          <img src="{{imageURL}}{{movie.poster_path}}" class="card-img-top" alt="Locandina {{movie.title}}" />
+          <div class="card-body">
+            <h5 class="card-title text-truncate">{{movie.title}}</h5>
+            <button class="btn" type="button"><i class="bi bi-suit-heart-fill"></i></button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </div>

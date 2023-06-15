@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MoviesService } from 'src/app/service/movies.service'; //importo il services per poterlo utilizzare
+import { Movies } from 'src/app/models/movies.interface'; //importo l'interfaccia
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-movies',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoviesComponent implements OnInit {
 
-  constructor() { }
+  movies: Movies[] = [];
+  imageURL = environment.imageURL
+
+  constructor(private moviesSrv: MoviesService) { }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.moviesSrv.recupera().subscribe((_movies: Movies[]) => {
+        this.movies = _movies;
+      })
+    }, 1000);
   }
 
 }
